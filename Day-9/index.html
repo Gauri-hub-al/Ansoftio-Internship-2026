@@ -7,15 +7,15 @@
 
 /* Body */
 body {
-  background-color: #cfd6dd;
+  background-color:#cfd6dd;
   font-family: Arial;
   margin: 0;
 }
 
-/* Navigation Bar */
+/* Navbar */
 .navbar {
   list-style: none;
-  background-color: #2c3e50;
+  background-color: blue;
   padding: 15px;
   margin: 0;
   text-align: right;
@@ -44,24 +44,27 @@ body {
 
 /* Heading */
 h1 {
-  text-align: center;
-  color: #2c3e50;
+  color:#2c3e50;
+  text-align:center;
 }
 
-/* Section Headings */
-.intro { color: #27ae60; }
-.about { color: #8e44ad; }
-.skills-title { color: #e67e22; }
-.contact { color: #c0392b; }
+/* Section Styles */
+.section {
+  margin-top: 20px;
+}
 
-/* Text */
+.intro { color:#27ae60; }
+.about { color:#8e44ad; }
+.skills-title { color:#e67e22; }
+.contact { color:#c0392b; }
+
 p {
-  font-size: 18px;
+  font-size:18px;
 }
 
-/* Skills List */
+/* Skills list */
 .skills {
-  font-size: 18px;
+  font-size:18px;
 }
 
 </style>
@@ -70,7 +73,7 @@ p {
 
 <body>
 
-<!-- Navigation Bar -->
+<!-- Navbar -->
 <ul class="navbar">
   <li><a href="#">Home</a></li>
   <li><a href="#">About</a></li>
@@ -84,26 +87,34 @@ p {
 
 <hr>
 
+<div class="section">
 <h2 class="intro">Introduction</h2>
 <p>Name: Gauri Gunwant</p>
 <p>Course: MCA</p>
 <p>I am a student learning web development.</p>
+</div>
 
+<div class="section">
 <h2 class="about">About Me</h2>
 <p>
 I am currently pursuing MCA and improving my skills in HTML, CSS, and JavaScript.
 </p>
+</div>
 
+<div class="section">
 <h2 class="skills-title">Skills</h2>
 <ul class="skills">
   <li>HTML</li>
   <li>CSS</li>
   <li>JavaScript</li>
 </ul>
+</div>
 
+<div class="section">
 <h2 class="contact">Contact</h2>
 <p>Email: gaurigunwant25@gmail.com</p>
 <p>Phone: 9699179449</p>
+</div>
 
 </div>
 
