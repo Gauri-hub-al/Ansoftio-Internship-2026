@@ -5,45 +5,56 @@
 
 <style>
 
+/* Body Styling */
 body {
-  background-color: #f0f8ff;
+  background-color:#f0f8ff;
   font-family: Arial;
   margin: 0;
 }
 
 /* Navigation Bar */
 .navbar {
+  list-style: none;
   background-color: #2c3e50;
-  overflow: hidden;
-  padding: 10px;
+  padding: 15px;
+  margin: 0;
   text-align: right;
 }
 
-.navbar a {
+.navbar li {
+  display: inline;
+  margin: 15px;
+}
+
+.navbar li a {
   color: white;
   text-decoration: none;
-  margin: 15px;
   font-size: 18px;
 }
 
-.navbar a:hover {
-  color: #f1c40f;
+.navbar li a:hover {
+  color: yellow;
 }
 
 /* Heading */
 h1 {
-  color: #2c3e50;
-  text-align: center;
-  margin-top: 20px;
+  color:#2c3e50;
+  text-align:center;
 }
 
-/* Sections */
-.section {
-  padding: 20px;
-  margin: 20px;
-  background-color: white;
-  border-radius: 10px;
-  font-size: 18px;
+/* Paragraph */
+p {
+  font-size:18px;
+}
+
+/* Skills List Fix */
+.skills {
+  font-size:18px;
+  padding-left: 20px;
+}
+
+.skills li {
+  margin: 5px;
 }
 
 </style>
@@ -52,44 +63,38 @@ h1 {
 
 <body>
 
-<!-- Navigation Bar -->
-<div class="navbar">
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Skills</a>
-  <a href="#">Contact</a>
-</div>
+<!-- Navigation Menu -->
+<ul class="navbar">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Skills</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
 
 <h1>My Portfolio</h1>
 
-<div class="section">
+<hr>
+
 <h2 style="color:#27ae60;">Introduction</h2>
 <p>Name: Gauri Gunwant</p>
 <p>Course: MCA</p>
 <p>I am a student learning web development.</p>
-</div>
 
-<div class="section">
 <h2 style="color:#8e44ad;">About Me</h2>
 <p>
 I am currently pursuing MCA and improving my skills in HTML, CSS, and JavaScript.
 </p>
-</div>
 
-<div class="section">
 <h2 style="color:#e67e22;">Skills</h2>
-<ul>
+<ul class="skills">
 <li>HTML</li>
 <li>CSS</li>
 <li>JavaScript</li>
 </ul>
-</div>
 
-<div class="section">
 <h2 style="color:#c0392b;">Contact</h2>
 <p>Email: gaurigunwant25@gmail.com</p>
 <p>Phone: 9699179449</p>
-</div>
 
 </body>
 </html>
