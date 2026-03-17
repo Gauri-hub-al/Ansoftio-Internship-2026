@@ -5,9 +5,9 @@
 
 <style>
 
-/* Body Styling */
+/* Body */
 body {
-  background-color:#f0f8ff;
+  background-color: #cfd6dd;
   font-family: Arial;
   margin: 0;
 }
@@ -36,25 +36,32 @@ body {
   color: yellow;
 }
 
+/* Container */
+.container {
+  margin: 20px;
+  padding: 20px;
+}
+
 /* Heading */
 h1 {
-  color:#2c3e50;
-  text-align:center;
+  text-align: center;
+  color: #2c3e50;
 }
 
-/* Paragraph */
+/* Section Headings */
+.intro { color: #27ae60; }
+.about { color: #8e44ad; }
+.skills-title { color: #e67e22; }
+.contact { color: #c0392b; }
+
+/* Text */
 p {
-  font-size:18px;
+  font-size: 18px;
 }
 
-/* Skills List Fix */
+/* Skills List */
 .skills {
-  font-size:18px;
-  padding-left: 20px;
-}
-
-.skills li {
-  margin: 5px;
+  font-size: 18px;
 }
 
 </style>
@@ -63,7 +70,7 @@ p {
 
 <body>
 
-<!-- Navigation Menu -->
+<!-- Navigation Bar -->
 <ul class="navbar">
   <li><a href="#">Home</a></li>
   <li><a href="#">About</a></li>
@@ -71,30 +78,34 @@ p {
   <li><a href="#">Contact</a></li>
 </ul>
 
+<div class="container">
+
 <h1>My Portfolio</h1>
 
 <hr>
 
-<h2 style="color:#27ae60;">Introduction</h2>
+<h2 class="intro">Introduction</h2>
 <p>Name: Gauri Gunwant</p>
 <p>Course: MCA</p>
 <p>I am a student learning web development.</p>
 
-<h2 style="color:#8e44ad;">About Me</h2>
+<h2 class="about">About Me</h2>
 <p>
 I am currently pursuing MCA and improving my skills in HTML, CSS, and JavaScript.
 </p>
 
-<h2 style="color:#e67e22;">Skills</h2>
+<h2 class="skills-title">Skills</h2>
 <ul class="skills">
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
 </ul>
 
-<h2 style="color:#c0392b;">Contact</h2>
+<h2 class="contact">Contact</h2>
 <p>Email: gaurigunwant25@gmail.com</p>
 <p>Phone: 9699179449</p>
+
+</div>
 
 </body>
 </html>
