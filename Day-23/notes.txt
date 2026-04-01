@@ -1,0 +1,18 @@
+Project: To-Do App
+
+Sections:
+- Home
+- About
+- Features
+- Contact
+
+UI Planning:
+- Color: Blue and White
+- Font: Arial
+- Layout: Simple and clean
+
+Features:
+- Add Task
+- Edit Task
+- Delete Task
+- Local Storage
