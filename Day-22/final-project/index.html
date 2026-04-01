@@ -1,19 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My To-Do App</title>
+    <title>Final Project - To-Do App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>My To-Do App</h1>
+<header>
+    <h1>To-Do App</h1>
+</header>
 
-<input type="text" placeholder="Enter task">
-<button>Add</button>
+<nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-<ul></ul>
+<section>
+    <input type="text" id="task" placeholder="Enter task">
+    <button onclick="addTask()">Add</button>
+</section>
+
+<ul id="list"></ul>
+
+<section id="about">
+    <h2>About</h2>
+    <p>This is a simple To-Do App project.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <input type="text" placeholder="Name"><br><br>
+    <input type="email" placeholder="Email"><br><br>
+    <textarea placeholder="Message"></textarea><br><br>
+    <button>Send</button>
+</section>
+
+<footer>
+    <p>© 2026 My Project</p>
+</footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
