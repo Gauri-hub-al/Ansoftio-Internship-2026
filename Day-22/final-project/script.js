@@ -1,1 +1,44 @@
-console.log("Project Started");
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+function renderTasks() {
+    let list = document.getElementById("list");
+    list.innerHTML = "";
+
+    tasks.forEach((t, index) => {
+        let li = document.createElement("li");
+
+        li.innerHTML = t +
+        ` <button onclick="editTask(${index})">Edit</button>
+          <button onclick="deleteTask(${index})">Delete</button>`;
+
+        list.appendChild(li);
+    });
+
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
+function addTask() {
+    let task = document.getElementById("task").value;
+
+    if (task) {
+        tasks.push(task);
+        renderTasks();
+        document.getElementById("task").value = "";
+    }
+}
+
+function deleteTask(index) {
+    tasks.splice(index, 1);
+    renderTasks();
+}
+
+function editTask(index) {
+    let newTask = prompt("Edit task:", tasks[index]);
+
+    if (newTask) {
+        tasks[index] = newTask;
+        renderTasks();
+    }
+}
+
+renderTasks();
